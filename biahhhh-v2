@@ -13,29 +13,37 @@ justify-content: center;
 align-items: center;
 height: 100vh;
 margin: 0;
-overflow: hidden;
 }
-    h1 {
-        font-size: 80px;
-        border: 3px solid #fff;
-        padding: 30px 60px;
-        border-radius: 20px;
-        opacity: 0;
-        animation: fadeIn 3s ease-in-out forwards, float 4s ease-in-out infinite;
-    }
-    @keyframes fadeIn {
-        0% { opacity: 0; transform: scale(0.8); }
-        100% { opacity: 1; transform: scale(1); }
-    }
-    @keyframes float {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-10px); }
-    }
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 60px;
+  border: 3px solid white;
+  border-radius: 20px;
+  animation: fadeIn 3s ease-in-out forwards, float 4s ease-in-out infinite;
+  opacity: 0;
+}
+.text {
+  font-size: 80px;
+}
+.emoji {
+  font-size: 80px;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
 </style>
 </head>
 <body>
-<h1>بیاح</h1>
+<div class="wrapper">
+<div class="text">بیاح</div>
+<div class="emoji">👍</div>
+</div>
 </body>
 </html>
-﻿
-
